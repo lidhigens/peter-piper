@@ -18,6 +18,24 @@ peterpiper += "If Peter Piper picked a peck of pickled peppers,";
 peterpiper += "Where's the peck of pickled peppers Peter Piper picked?";
 
 var counter = 0;
+function manyPs(peterpiper)
+{
+    var count=0;
+    for(var i =0; i < peterpiper.length; i++)
+    {
+        if(peterpiper.charAt(i)=='p')
+            {
+                count++;
+            }
+        if(peterpiper.charAt(i)=='P')
+            {
+                count++;
+            }
+    }
+    return count;
+}
+counter=manyPs(peterpiper);
+
 
 // TODO: Count the number of times an uppercase P or lowercase p character
 //       occurs in the `peterpiper` string.
